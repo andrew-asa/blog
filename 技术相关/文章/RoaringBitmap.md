@@ -2,8 +2,8 @@
 
 [TOC]
 
-从接触gvi的概念到使用大概已经一年了，但一直却像隔着层纱看事物一样，让人很不是滋味。
-趁着最近抽出时间看底层的代码，惊叹其实现精妙，似有所得，因此记录一下，以便以后复习用。
+> 从接触gvi的概念到使用大概已经一年了，但一直却像隔着层纱看事物一样，让人很不是滋味。
+> 趁着最近抽出时间看底层的代码，惊叹其实现精妙，似有所得，因此记录一下，以便以后复习用。
 
 
 ## 存放
@@ -25,13 +25,13 @@ public void add(final int x) {
   }
 }
 ```
-可以看到先用高16位查找要存放在哪个容器里面，即一个int类型被拆分为2个short。
-同时上面有一个特殊的下标即“i”，之所有说i很特殊，因为其表示含义很强，即如果
-i >= 0则表示该容器已经存在，且表示为容器的下标，索引
-如果i <= 0则 (-i-1) 表示新生成的容器要存放的位置。并默认生成一个ArrayContainer
-容器来存放低16的数值。
-所以关键的算法是找i，以及ArrayContainer的存储方式。
-把这查找i算法放一放，先假定容器已经找到，先看看ArrayContainer如何进行存储的。
+> 可以看到先用高16位查找要存放在哪个容器里面，即一个int类型被拆分为2个short。
+> 同时上面有一个特殊的下标即“i”，之所有说i很特殊，因为其表示含义很强，即如果
+> i >= 0则表示该容器已经存在，且表示为容器的下标，索引
+> 如果i <= 0则 (-i-1) 表示新生成的容器要存放的位置。并默认生成一个ArrayContainer
+> 容器来存放低16的数值。
+> 所以关键的算法是找i，以及ArrayContainer的存储方式。
+> 把这查找i算法放一放，先假定容器已经找到，先看看ArrayContainer如何进行存储的。
 >
 
 ### ArrayContainer
@@ -44,7 +44,8 @@ public ArrayContainer(final int capacity) {
   content = new short[capacity];
 }
 ```
-以看出ArrayContainer会默认生成一个4个short类型的数组。
+> 可看出ArrayContainer会默认生成一个4个short类型的数组。
+
 ``` java
 public Container add(final short x) {
   int loc = Util.unsignedBinarySearch(content, 0, cardinality, x);
@@ -185,14 +186,14 @@ protected static int hybridUnsignedBinarySearch(final short[] array, final int b
 
 
 ## 参考文章
-1. https://github.com/RoaringBitmap/RoaringBitmap
++ https://github.com/RoaringBitmap/RoaringBitmap
 
-2. https://blog.csdn.net/xywtalk/article/details/50991738
++ https://blog.csdn.net/xywtalk/article/details/50991738
 
-3. https://www.cnblogs.com/565261641-fzh/p/7686757.html
++ https://www.cnblogs.com/565261641-fzh/p/7686757.html
 
-4. https://www.cnblogs.com/blog-cq/p/5793529.html
++ https://www.cnblogs.com/blog-cq/p/5793529.html
 
-5. https://blog.csdn.net/zgrjkflmkyc/article/details/12185143
++ https://blog.csdn.net/zgrjkflmkyc/article/details/12185143
 
-6. https://blog.csdn.net/zgrjkflmkyc/article/details/12186139
++ https://blog.csdn.net/zgrjkflmkyc/article/details/12186139

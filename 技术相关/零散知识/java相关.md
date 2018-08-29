@@ -1,0 +1,1 @@
++ 获得程序当前路径System.getProperty("user.dir")更具体的可以看system类

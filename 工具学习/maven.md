@@ -5,7 +5,8 @@
 ```
 
 
-### 模板
++  模板
+
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
@@ -93,3 +94,20 @@
 
 </project>
 ```
+
++ 指定编译语言等级
+
+```
+<plugin>
+      <artifactId>maven-compiler-plugin</artifactId>
+      <version>3.1</version>
+      <configuration>
+             <source>1.8</source>
+             <target>1.8</target>
+       </configuration>
+</plugin>
+
+```
+
+### 待解决
++ 资源文件和java在同一个包里面，怎样也像resource文件夹那样打进包里面

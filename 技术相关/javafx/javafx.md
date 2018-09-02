@@ -44,6 +44,12 @@ private void setWindowCenter(Stage stage) {
    ``
    单列布局
    ``
+   
++ ListView 
+ 
+  ```
+  listview能够解决动态添加元素的机制
+  ```
 	
 	
 	
@@ -54,3 +60,7 @@ private void setWindowCenter(Stage stage) {
 
 todo list
 java1234 网下载lucene分析与应用 
+
+
+### 参考资料
++ [https://www.w3cschool.cn/java/javafx-listview.html](https://www.w3cschool.cn/java/javafx-listview.html)

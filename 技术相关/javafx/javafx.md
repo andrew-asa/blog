@@ -15,6 +15,8 @@ private void setWindowCenter(Stage stage) {
 ``` 
 现在fxml中定义样式，控件，然后再程序里面进行调用
 ```
++ Stage
+    + 设置应用程序图标 `stage.getIcons().add(new Image("file:xxx.png"));`
 
 + TextField
    + 圆角
@@ -45,11 +47,10 @@ private void setWindowCenter(Stage stage) {
    单列布局
    ``
    
-+ ListView 
- 
-  ```
-  listview能够解决动态添加元素的机制
-  ```
++ ListView `listview能够解决动态添加元素的机制`
+    + 禁止滚动条
+    + 动态高度
+      
 	
 	
 	
@@ -58,9 +59,23 @@ private void setWindowCenter(Stage stage) {
 
 ``UI设置与代码分离，等同于chrome的控制台？``
 
-todo list
+### 观点
++ 一个jvm只能运行一个javafx程序
+
+```
+为什么，是什么做了限制？
+```
+
++ 创建和关闭Stage只能通过javafx提供的线程里面进行创建
+
+```
+为什么，为什么要做这样的限制，如果不进行这样的限制又有什么后果？
+```
+
+### todo list
 java1234 网下载lucene分析与应用 
 
 
 ### 参考资料
 + [https://www.w3cschool.cn/java/javafx-listview.html](https://www.w3cschool.cn/java/javafx-listview.html)
++ [http://www.javafxchina.net/main/](http://www.javafxchina.net/main/)

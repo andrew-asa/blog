@@ -52,13 +52,19 @@ Object result = addMethod.invoke(clazz.newInstance(), 10, 20);
 	  ```
 	  除了在转发的方法调用中使用经过修改的参数之外，还可以选择根 本不转发该调用。其效果就是相应的类元素被移除。
 	  ```
-	  
-     + visitMethod
-     + visitOuterClass
-     + visitInnerClass
+     + public ClassVisitor(int api);
+     + public ClassVisitor(int api, ClassVisitor cv);
      + public void visit(int version, int access, String name,
-String signature, String superName, String[] interfaces)  
-          + version版本号  
+String signature, String superName, String[] interfaces);
+     + public void visitSource(String source, String debug);
+     + public void visitOuterClass(String owner, String name, String desc); AnnotationVisitor visitAnnotation(String desc, boolean visible); public void visitAttribute(Attribute attr);
+     + public void visitInnerClass(String name, String outerName,
+String innerName, int access);
+     + public FieldVisitor visitField(int access, String name, String desc,
+String signature, Object value);
+     + public MethodVisitor visitMethod(int access, String name, String desc,
+       String signature, String[] exceptions);
+void visitEnd();
     
 + MethodVisitor
      + AnnotationVisitor visitAnnotationDefault();
@@ -243,3 +249,5 @@ catch:
 ### 参考资料
 + 1.[http://yunshen0909.iteye.com/blog/2219540](http://yunshen0909.iteye.com/blog/2219540)
 + 2.[https://blog.csdn.net/aesop_wubo/article/details/48948211](https://blog.csdn.net/aesop_wubo/article/details/48948211)
++ 3. [https://blog.csdn.net/kwame211/article/details/77677662/](https://blog.csdn.net/kwame211/article/details/77677662/)
++ 4. [http://set.ee/jbe/](http://set.ee/jbe/)

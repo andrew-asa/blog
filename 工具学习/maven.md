@@ -109,5 +109,30 @@
 
 ```
 
++ 指定构建的资源文件
+
+```
+<build>  
+  <resources>  
+    <resource>  
+      <directory>src/main/java</directory>  
+        <includes>  
+          <include>**/*.xml</include>  
+        </includes>  
+    </resource>  
+  </resources>  
+</build> 
+```
+或者
+
+```
+<resource>
+     <directory>src/main/java</directory>
+     <excludes>
+           <exclude>**/*.java</exclude>
+     </excludes>
+</resource>
+```
+
 ### 待解决
 + 资源文件和java在同一个包里面，怎样也像resource文件夹那样打进包里面

@@ -1,4 +1,5 @@
 ### 零散知识点
++ 默认程序打开文件`desktop.open(file);`
 + 窗口居中 先show再进行调用
 
 ```
@@ -62,6 +63,8 @@ private void setWindowCenter(Stage stage) {
 
 ### 观点
 + 一个jvm只能运行一个javafx程序
++ 如果像label只是整个javafx的一个节点，那么在整棵树中应该怎样进行增删改查，以及界面是什么时候，用一种什么样的方式进行刷新。似乎刷新机制才是整个javafx的重点。
++ 为什么ui需要在不同的线程中进行刷新？
 
 ```
 为什么，是什么做了限制？

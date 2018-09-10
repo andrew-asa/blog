@@ -16,6 +16,7 @@ private void setWindowCenter(Stage stage) {
 现在fxml中定义样式，控件，然后再程序里面进行调用
 ```
 + Stage
++ 
     + 设置应用程序图标 `stage.getIcons().add(new Image("file:xxx.png"));`
 
 + TextField
@@ -75,7 +76,8 @@ private void setWindowCenter(Stage stage) {
 ### todo list
 java1234 网下载lucene分析与应用 
 
-
 ### 参考资料
 + [https://www.w3cschool.cn/java/javafx-listview.html](https://www.w3cschool.cn/java/javafx-listview.html)
 + [http://www.javafxchina.net/main/](http://www.javafxchina.net/main/)
++ [https://github.com/jfoenixadmin/JFoenix.git](https://github.com/jfoenixadmin/JFoenix.git)
++ [https://github.com/javafxchina/xmdp](https://github.com/javafxchina/xmdp)

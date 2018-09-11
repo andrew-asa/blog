@@ -133,6 +133,3 @@
      </excludes>
 </resource>
 ```
-
-### 待解决
-+ 资源文件和java在同一个包里面，怎样也像resource文件夹那样打进包里面

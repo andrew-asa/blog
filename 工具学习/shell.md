@@ -3,5 +3,4 @@
 
 ```
 find . "(" -name "*.java" ")"  -print | grep -v test | xargs wc -l | grep total
- 
 ```

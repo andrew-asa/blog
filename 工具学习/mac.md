@@ -15,6 +15,8 @@
 
 ### 软件下载地址
 + [https://www.waitsun.com/?s=mweb](https://www.waitsun.com/?s=mweb)
+### 相关命令
++ 允许安装任何dmg文件`sudo spctl --master-disable`
 
 
 

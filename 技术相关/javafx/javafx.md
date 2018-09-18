@@ -77,7 +77,10 @@ private void setWindowCenter(Stage stage) {
 ```
 
 ### todo list
-java1234 网下载lucene分析与应用 
++ java1234 网下载lucene分析与应用 
++ 搜索输入文字下拉展开
+  + 用listview 但是却不能解决listview中如何不显示问题以及listview 中高度随子节点高度动态调整的问题。
+  + 用ComboBox里面却不能放node节点元素，所以赶紧要解决这个问题还得深入了解弹出框，下拉框，ComboBox等底层原理。
 
 ### 参考资料
 + [https://www.w3cschool.cn/java/javafx-listview.html](https://www.w3cschool.cn/java/javafx-listview.html)

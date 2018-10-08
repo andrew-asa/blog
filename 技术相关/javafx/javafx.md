@@ -1,6 +1,7 @@
 ### 零散知识点
 + 默认程序打开文件`desktop.open(file);`
 + 窗口居中 先show再进行调用
++ canvas转图片还需要启动一个javafx线程
 
 ```
 private void setWindowCenter(Stage stage) {

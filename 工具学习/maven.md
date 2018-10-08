@@ -3,7 +3,8 @@
 ```
  mvn exec:java -Dexec.mainClass="com.xxx.xxx" -Dexec.args="-r xxx"
 ```
-
++ Maven中的SNAPSHOT版本和正式版本
+  + 见[Maven中的SNAPSHOT版本和正式版本](https://www.cnblogs.com/huang0925/p/5169624.html)
 
 +  模板
 

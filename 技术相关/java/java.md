@@ -1,5 +1,19 @@
 ### 零散知识点
++ 单例的正确写法
 
+ ```
+ public static DataBaseContent getInstance() {
+
+        if (INSTANCE == null) {
+            synchronized (DataBaseContent.class) {
+                if (INSTANCE == null) {
+                    INSTANCE = new DataBaseContent();
+                }
+            }
+        }
+        return INSTANCE;
+    }
+ ```
 
 ### 遗留问题
 + window上面jvm引用文件不能删除？

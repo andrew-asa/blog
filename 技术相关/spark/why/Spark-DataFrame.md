@@ -13,7 +13,12 @@
 
  ```sequence
 Title:自定义数据集
-reader.load->relation.buildScan: 调用
-relation.buildScan->RDD: 生成
-RDD->RDD.compute: 返回用户的数据
+reader->RelationProvider:format(类名)决定使用哪个驱动
+RelationProvider->reader:使用option中提供的参数生成相应的relation
+reader.load->relation.schema:调用
+relation.schema->reader.load:结合schema生成Dataset<Row>
+Dataset.show->relation.buildScan:生成RDD<Row>
  ```
+ + 但是RDD是如何转换成为DataSet<Row>的呢？
+ + BaseRDD<InternalRow> 迭代器里面命名要求的是返回InternalRow但是在真正进行实习的实现的时候要求的竟然是Row类型？scala语言是否是像js那样的弱语言类型？
+ 

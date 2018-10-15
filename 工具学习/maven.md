@@ -5,7 +5,17 @@
 ```
 + Maven中的SNAPSHOT版本和正式版本
   + 见[Maven中的SNAPSHOT版本和正式版本](https://www.cnblogs.com/huang0925/p/5169624.html)
-
+  
++ 依赖本地jar
+```
+<dependency>
+            <groupId>com.asa</groupId>
+            <artifactId>com.asa.third</artifactId>
+            <version>1.0.0-SNAPSHORT</version>
+            <scope>system</scope>
+            <systemPath>${system.lib.dir}/com.asa.third-1.0-SNAPSHOT.jar</systemPath>
+        </dependency>
+```
 +  模板
 
 ```

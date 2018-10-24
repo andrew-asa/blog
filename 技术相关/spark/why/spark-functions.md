@@ -77,5 +77,65 @@ trim(e: Column, trimString: String):剪掉左右两边的指定字符
 + substring_index(str: Column, delim: String, count: Int):Returns the substring from string str before count occurrences of the delimiter delim. If count is positive, everything the left of the final delimiter (counting from left) is returned. If count is negative, every to the right of the final delimiter (counting from the right) is returned. substring_index performs a case-sensitive match when searching for delim.
 + translate(src: Column, matchingString: String, replaceString: String):把src中的matchingString全换成replaceString。
 
+## 聚合函数
++ approx_count_distinct
+count_distinct近似值
++ avg 平均值
++ collect_list 聚合指定字段的值到list
++ collect_set 聚合指定字段的值到set
++ corr 计算两列的Pearson相关系数
++ count 计数
++ countDistinct去重计数 SQL中用法
+select count(distinct class)
++ covar_pop 总体协方差（population covariance）
++ covar_samp 样本协方差（sample covariance）
++ first 分组第一个元素
++ last 分组最后一个元素
++ grouping 
++ grouping_id
++ kurtosis 计算峰态(kurtosis)值
++ skewness 计算偏度(skewness)
++ max 最大值
++ min 最小值
++ mean 平均值
++ stddev 即stddev_samp
++ stddev_samp 样本标准偏差（sample standard deviation）
++ stddev_pop 总体标准偏差（population standard deviation）
++ sum 求和
++ sumDistinct非重复值求和 SQL中用法select sum(distinct class)
++ var_pop总体方差（population variance）
++ var_samp 样本无偏方差（unbiased variance）
++ variance即var_samp
+
+## 集合函数
++ array_contains(column,value)
+检查array类型字段是否包含指定元素
++ explode
+ 展开array或map为多行
++ explode_outer
+同explode，但当array或map为空或null时，会展开为null。
++ posexplode
+同explode，带位置索引。
++ posexplode_outer
+同explode_outer，带位置索引。
++ from_json
+解析JSON字符串为StructType or ArrayType，有多种参数形式，详见文档。
++ to_json
+转为json字符串，支持StructType, ArrayType of StructTypes, a MapType or ArrayType of MapTypes。
++ get_json_object(column,path)
+获取指定json路径的json对象字符串。
+select get_json_object('{"a"1,"b":2}','$.a');
+[JSON Path介绍](http://blog.csdn.net/koflance/article/details/63262484)
++ json_tuple(column,fields)
+获取json中指定字段值。select json_tuple('{"a":1,"b":2}','a','b');
++ map_keys
+返回map的键组成的array
++ map_values
+返回map的值组成的array
++ size
++ array or map的长度
++ sort_array(e: Column, asc: Boolean)
+将array中元素排序（自然排序），默认asc。
+
 #参考资料
 + 1:[https://liam8.github.io/2018/03/23/spark-sql-functions-api/index.html](https://liam8.github.io/2018/03/23/spark-sql-functions-api/index.html)

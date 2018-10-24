@@ -144,3 +144,6 @@
      </excludes>
 </resource>
 ```
+
+# Q
++ mvn package 和 mvn install 的区别

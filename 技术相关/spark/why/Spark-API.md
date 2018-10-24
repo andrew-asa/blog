@@ -1,6 +1,7 @@
 # DataFrame
 + registerTempTable("tableName") 注册一张临时表
 + createOrReplaceTempView("tableName") 将表加载入spark-sql，后面就可以运用spark-sql进行相关的操作
++ drop 删掉某一行
 + filter(Column column)
    + Column 可以用dataSet.col(columnName)进行获取
 + filter(String conditionExpr)
@@ -9,11 +10,14 @@
 
 + 新增列的多种方式
    + 新增一个表达式(spark 中支持的函数 参考资料:1)
+   + mapPartitions 可以自定义运算
    `        dataSet=dataSet.selectExpr("*", expression + " as " + columnName);
   `
 + dataset.withColumn(String colName,Column column)
 + 自定义函数列（遇到自定义的函数只能先落地？）
 
++ mapPartitions
++ join
 
 + 动作
     + collect
@@ -47,3 +51,4 @@
 
 # 参考资料
 + 1:[https://liam8.github.io/2018/03/23/spark-sql-functions-api/index.html](https://liam8.github.io/2018/03/23/spark-sql-functions-api/index.html)
++ 2:[http://www.cnblogs.com/CareySon/p/3411176.html](http://www.cnblogs.com/CareySon/p/3411176.html)

@@ -20,8 +20,10 @@
 + join
 
 + 动作
-    + collect
+    + collect 
     + collectAsList 已经是获取数据了
+     把数据全部拉取到一个节点
+    + describe 获取字段的统计信息
 
 + 应用方案
    + 过滤

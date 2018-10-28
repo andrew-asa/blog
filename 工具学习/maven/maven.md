@@ -145,5 +145,58 @@
 </resource>
 ```
 
++ 利用github搭建个人maven仓库
+  + github上面建立仓库
+  + 本地建立存放仓库
+  + 本地仓库和github仓库关联起来
+  + 本地打包发布到本地仓库
+  
+  ```
+  pom 文件中指定
+  <distributionManagement>
+    <repository>
+      <id>仓库id</id>
+      <url>file:/local/project/</url>
+    </repository>
+  </distributionManagement>
+  ```
+  + 运行发布命令
+  
+  ```
+  mvn deploy -DaltDeploymentRepository=仓库id::default::file:/local/project/
+  ```
+  + 上传到github
+  + pom中指定git仓库
+  
+  ```
+    <repositories>
+        <repository>
+            <id>仓库id</id>
+            <url>https://raw.githubusercontent.com/github 地址</url>
+        </repository>
+    </repositories>
+    例如
+        <repository>
+            <id>andrew.asa-maven-repository</id>
+            <url>https://raw.githubusercontent.com/andrew-asa/maven-repository/master/repository</url>
+        </repository>
+  ```
+  + 向一般工程一样指定依赖即可
+  
+  ```
+   <dependency>
+            <groupId>com.asa</groupId>
+            <artifactId>com.asa.third</artifactId>
+            <version>1.0-SNAPSHOT</version>
+    </dependency>
+  ```
+  + 参考参考资料[1]
+
 # Q
 + mvn package 和 mvn install 的区别
++ `<packaging>jar|pom</packaging>` 的区别
+
+# 参考资料
++ 1:[https://blog.csdn.net/hengyunabc/article/details/47308913](https://blog.csdn.net/hengyunabc/article/details/47308913)
++ 2:[https://www.cnblogs.com/huang0925/p/5169624.html](https://www.cnblogs.com/huang0925/p/5169624.html)
++ 3:[https://blog.csdn.net/tomcat_2014/article/details/50206197?locationNum=5](https://blog.csdn.net/tomcat_2014/article/details/50206197?locationNum=5)

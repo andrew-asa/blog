@@ -6,6 +6,21 @@
     + 可以定制皮肤
     + 可以显示tooltip
 + Labeled Controls 抽象成为文本显示区域
++ TextField
+   + 圆角
+   + 放置搜索图表
+   + 字体大小
+   
+   		```
+   		setStyle(" -fx-font: normal 16px \"Helvetica Neue\", Arial, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Heiti;font: normal 12px \"Helvetica Neue\", Arial, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Heiti;")
+   		```
+   		但是设置出来的字体并不能像css那样进行配置
+   
+   + 水印
+   + 事件
+      + setOnKeyPressed 按键事件
+      
++ AnchorPane
 
 + label `可以设置图标，缩放，旋转，文字和图标的相对位置`
 + button `继承自labeled`

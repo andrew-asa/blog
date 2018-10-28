@@ -12,7 +12,22 @@
    + 节点会居中对齐
 
 + BorderPane
-   
+
++ StackPane
+    + 添加组件
+```
+stackPane.getChildren().add(imageView);
+stackPane.getChildren().add(text);
+```
+    
+    + 设置组件中的绝对布局
+    
+```
+Insets insets = new Insets(0, 30, 30, 0);
+StackPane.setAlignment(text, Pos.BOTTOM_RIGHT);
+StackPane.setMargin(text, insets);
+```
+先添加进去的组件会放在下面
    
 + 布局主要考虑几个问题
     + 节点的大小变化
@@ -22,3 +37,19 @@
 
 + 布局通用属性
    + setAlignment()方法来控制节点和面板的对齐方式。
+
++ VBox 
+
+   ``
+   单列布局
+   ``
+   
++ ListView `listview能够解决动态添加元素的机制`
+    + 禁止滚动条
+    + 动态高度
+
+# 参考资料
++ 1:[https://www.cnblogs.com/yangwen0228/p/6831486.html](https://www.cnblogs.com/yangwen0228/p/6831486.html)
++ 2:[https://stackoverflow.com/questions/14983706/javafx-stackpane-x-y-coordinates](https://stackoverflow.com/questions/14983706/javafx-stackpane-x-y-coordinates)
+      
+	

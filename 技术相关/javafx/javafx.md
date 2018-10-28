@@ -18,45 +18,18 @@ private void setWindowCenter(Stage stage) {
 现在fxml中定义样式，控件，然后再程序里面进行调用
 ```
 + Stage
-+ 
+    + stage 可以想成是視窗，基本上class Stage 也是繼承視窗class Window。所以有關視窗視窗的設定就要先找到這個物件來操作。
+   + scene 可以當做是把視窗的外框去掉後，中間那一塊區域。
+  + node 則是區域中的所有元素。由一個 rootnode 當作樹狀結構的根節點開始展開。
+從「scene.getWindow()」可以找到「stage」
+從「scene.getRoot」可以找到「rootnode」
     + 设置应用程序图标 `stage.getIcons().add(new Image("file:xxx.png"));`
 
-+ TextField
-   + 圆角
-   + 放置搜索图表
-   + 字体大小
-   
-   		```
-   		setStyle(" -fx-font: normal 16px \"Helvetica Neue\", Arial, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Heiti;font: normal 12px \"Helvetica Neue\", Arial, \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", Heiti;")
-   		```
-   		但是设置出来的字体并不能像css那样进行配置
-   
-   + 水印
-   + 事件
-      + setOnKeyPressed 按键事件
-
-+ 字体
-    + 创建字体
-    ```       
-     Font font =  Font.font(family, size); 
-    ```
 + Scene
     + 设置背景透明 `setFill(null)`
-+ AnchorPane
 
-+ VBox 
 
-   ``
-   单列布局
-   ``
-   
-+ ListView `listview能够解决动态添加元素的机制`
-    + 禁止滚动条
-    + 动态高度
-      
-	
-	
-	
+
 + JavaFX Scene Builder
     + FXMLLoader.load `反序列化，在Scene Builder里面先完成控件，界面的布局设置，然后调用loader出来进行反序列化成对应的布局，控件`
 

@@ -1,6 +1,9 @@
 ### 知识点
-+ Panel
-    + 节点居上和居左对齐方式。
++ Parent
+    + lookup(selector) 像前端那样提供选择器查找子类
++ Pane
+    + 节点居上和居左对齐方式。放在其上面的元素需要制定x，y坐标,体现为绝对布局
+    + Pane 添加child的时候回都放到左上角，所以需要Pane.xxx相应的方法设置child node的位置
 + HBox
    + 节点是居上和居左对齐。
 + TilePane
@@ -12,6 +15,7 @@
    + 节点会居中对齐
 
 + BorderPane
+   + 上、下、左、右、中
 
 + StackPane
     + 添加组件
@@ -51,5 +55,6 @@ StackPane.setMargin(text, insets);
 # 参考资料
 + 1:[https://www.cnblogs.com/yangwen0228/p/6831486.html](https://www.cnblogs.com/yangwen0228/p/6831486.html)
 + 2:[https://stackoverflow.com/questions/14983706/javafx-stackpane-x-y-coordinates](https://stackoverflow.com/questions/14983706/javafx-stackpane-x-y-coordinates)
++ 3:[JavaFX布局（一） https://blog.csdn.net/theonegis/article/details/50184811](https://blog.csdn.net/theonegis/article/details/50184811)
       
 	

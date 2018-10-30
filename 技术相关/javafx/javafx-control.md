@@ -20,7 +20,10 @@
    + 事件
       + setOnKeyPressed 按键事件
       
++ Pane
+
 + AnchorPane
+
 
 + label `可以设置图标，缩放，旋转，文字和图标的相对位置`
 + button `继承自labeled`

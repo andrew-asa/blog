@@ -197,6 +197,6 @@
 + `<packaging>jar|pom</packaging>` 的区别
 
 # 参考资料
-+ 1:[https://blog.csdn.net/hengyunabc/article/details/47308913](https://blog.csdn.net/hengyunabc/article/details/47308913)
-+ 2:[https://www.cnblogs.com/huang0925/p/5169624.html](https://www.cnblogs.com/huang0925/p/5169624.html)
-+ 3:[https://blog.csdn.net/tomcat_2014/article/details/50206197?locationNum=5](https://blog.csdn.net/tomcat_2014/article/details/50206197?locationNum=5)
++ 1:[利用github搭建个人maven仓库 https://blog.csdn.net/hengyunabc/article/details/47308913](https://blog.csdn.net/hengyunabc/article/details/47308913)
++ 2:[理解Maven中的SNAPSHOT版本和正式版本https://www.cnblogs.com/huang0925/p/5169624.html](https://www.cnblogs.com/huang0925/p/5169624.html)
++ 3:[maven多模块使用，父模块(modules使用，package替pom)，子模块(parent使用） https://blog.csdn.net/tomcat_2014/article/details/50206197?locationNum=5](https://blog.csdn.net/tomcat_2014/article/details/50206197?locationNum=5)

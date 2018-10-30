@@ -3,10 +3,12 @@ V8.add
 + registerJavaMethod(function,"name") 方法联系到类名 注册一个新方法
 + executeScript 执行js脚本
 + executeBooleanScript 返回一个boolean 类型
++ v8会对对象进行自动释放
 
 # 相应的类
 + JavaVoidCallback
 + V8Arrays
+   + getType("attr")获取参数类型，类型定义在V8Value例如：如果参数是一个方法则getType返回V8_FUNCTION
 + V8Object
     + add 绑定一个成员
     ```

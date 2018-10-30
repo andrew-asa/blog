@@ -13,7 +13,7 @@
    + mapPartitions 可以自定义运算
    `        dataSet=dataSet.selectExpr("*", expression + " as " + columnName);
   `
-+ dataset.withColumn(String colName,Column column)
++ dataset.withColumn(String colName,Column column) 新增列
 + 自定义函数列（遇到自定义的函数只能先落地？）
 
 + mapPartitions

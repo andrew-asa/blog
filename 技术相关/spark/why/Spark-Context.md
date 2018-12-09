@@ -5,6 +5,7 @@
 + parallelize
 + RDD转DataSet
 + JavaSparkContext和一般的SparkContext的区别
++ SparkSession 和JavaSparkContext之间用哪个？
 
 
 # Q

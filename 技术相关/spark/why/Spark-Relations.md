@@ -23,3 +23,6 @@ table2叫做子表
 # Q 
 + 表A和表B建立关联，那么得出的一张新表的数据过程是怎么表示，又是如何表示他们之间的关联？
 + sql是否是最终分解为dataframe进行处理的。
+
+# 参考文章
++ 1:[Spark SQL 之 Join 实现 http://sharkdtu.com/posts/spark-sql-join.html](http://sharkdtu.com/posts/spark-sql-join.html)

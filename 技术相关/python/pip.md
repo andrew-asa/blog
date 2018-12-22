@@ -1,5 +1,6 @@
 # 常用命令
 + 安装依赖的jar pip install -r requirements.txt
++ 安装离线包`pip install xxx.whl`
 
 # F&Q
 + pip 就像maven搜索安装工具？指定具体搜索地要如何进行处理？

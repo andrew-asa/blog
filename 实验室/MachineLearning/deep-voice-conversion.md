@@ -16,3 +16,5 @@
 + [TIMIT 维基百科](https://zh.wikipedia.org/wiki/TIMIT)
 + [常用音频数据库记录 https://www.cnblogs.com/xingshansi/p/6819532.html](https://www.cnblogs.com/xingshansi/p/6819532.html)
 + [Mac下CUDA开启及Tensorflow-gpu 1.4 安装 https://www.cnblogs.com/wolfray/p/8040694.html](https://www.cnblogs.com/wolfray/p/8040694.html)
++ [Tensorflow 1.8 with GPU on macOS High Sierra 10.13.6 https://segmentfault.com/a/1190000015807229](https://segmentfault.com/a/1190000015807229)
++ [cuda 卸载](https://devtalk.nvidia.com/default/topic/1025945/cuda-setup-and-installation/mac-cuda-9-0-driver-fully-compatible-with-macos-high-sierra-10-13-error-quot-update-required-quot-solved-/)

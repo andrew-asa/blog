@@ -8,3 +8,4 @@
 + 计算文件md5值 `md5 file`
 + 计算文件base64 `base64 file`
 + 计算字符串base64 `echo xxx base64`
++ 杀死占用某端口的所有进程 `kill -9 $(l:进程号 -t)`

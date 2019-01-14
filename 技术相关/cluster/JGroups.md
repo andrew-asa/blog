@@ -1,4 +1,7 @@
 # JGroups 
++ 群组通讯工具包
++ 集群的功能从大的方向来说就是一个群组
++ 集群只是一个概念，任何能够协调多台机器同时工作的的模块都叫做集群
 
 # Q & A
 + EhCache 从 1.5. 版本开始增加了 JGroups 的分布式集群模式。与 RMI 方式相比较， JGroups 提供了一个非常灵活的协议栈、可靠的单播和多播消息传输，主要的缺点是配置复杂以及一些协议栈对第三方包的依赖。 
@@ -12,6 +15,6 @@
 +  [使用JGroups TCP实现EHCache的集群 https://my.oschina.net/u/866380/blog/501082](https://my.oschina.net/u/866380/blog/501082)
 +  [jgroup 官方文档 http://www.jgroups.org/](http://www.jgroups.org/)
 +  [JGroup 介绍 https://gcloud.qq.com/forum/topic/56a58c5188d0a30a0ddb176f](https://gcloud.qq.com/forum/topic/56a58c5188d0a30a0ddb176f)
-+  []()
++  [JGroup 相关功能 https://developer.jboss.org/en/jgroups/content?itemView=thumbnail&_sscc=t](https://developer.jboss.org/en/jgroups/content?itemView=thumbnail&_sscc=t)
 +  []()
 +  []()

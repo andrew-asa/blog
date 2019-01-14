@@ -192,6 +192,39 @@
   ```
   + 参考参考资料[1]
 
+  + 打jar连同依赖
+     + 配置
+     
+  ```
+  <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <appendAssemblyId>false</appendAssemblyId>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <!--<manifest>-->
+                            <!--&lt;!&ndash; 此处指定main方法入口的class &ndash;&gt;-->
+                            <!--<mainClass>com.xxx.uploadFile</mainClass>-->
+                        <!--</manifest>-->
+                    </archive>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>assembly</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+  ```
+  
+   + 执行命令`mvn package`
+  
+
 # Q
 + mvn package 和 mvn install 的区别
 + `<packaging>jar|pom</packaging>` 的区别

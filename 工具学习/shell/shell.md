@@ -9,3 +9,6 @@
 + 计算文件base64 `base64 file`
 + 计算字符串base64 `echo xxx base64`
 + 杀死占用某端口的所有进程 `kill -9 $(l:进程号 -t)`
++ !n 执行第n个命名
++ !! 执行上一条命令
++ !command 执行上一条一command开头的命令

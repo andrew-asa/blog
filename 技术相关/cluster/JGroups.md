@@ -8,6 +8,9 @@
   + 什么是单播，什么是多播？主要是用于解决什么问题?
 + 基于JGroup 就可以搭建一个简单的集群环境？怎么来？
 + 组里面的节点范围可以多广？ip分布可以多广？广播的时候又是如何进行标明，加入某一个组？
++ 成员发现，协调者发现机制是怎么样的？
++ 加入通道的操作消息传播范围有多广？
++ 节点命名？
 
 ## 参考资料
 + [https://www.ibm.com/developerworks/cn/java/j-lo-ehcache/index.html](https://www.ibm.com/developerworks/cn/java/j-lo-ehcache/index.html)
@@ -19,7 +22,7 @@
 +  [JGroup 相关功能 https://developer.jboss.org/en/jgroups/content?itemView=thumbnail&_sscc=t](https://developer.jboss.org/en/jgroups/content?itemView=thumbnail&_sscc=t)
 +  [https://whitesock.iteye.com/blog/199229](https://whitesock.iteye.com/blog/199229)
 +  [协议栈讲解 https://blog.csdn.net/xianymo/article/details/44064547](https://blog.csdn.net/xianymo/article/details/44064547)
-+  []()
++  [JGroups入门教程BARRIER层  https://www.linuxidc.com/Linux/2013-10/91114p5.htm](https://www.linuxidc.com/Linux/2013-10/91114p5.htm)
 +  []()
 +  []()
 +  []()

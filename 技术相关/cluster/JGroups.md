@@ -13,6 +13,7 @@
 + 节点命名？
 
 ## 参考资料
++ [JGroup 手册 http://jgroups.org/manual/index.html](http://jgroups.org/manual/index.html)
 + [https://www.ibm.com/developerworks/cn/java/j-lo-ehcache/index.html](https://www.ibm.com/developerworks/cn/java/j-lo-ehcache/index.html)
 +  [http://www.itboth.com/d/3mMbua/socket-tcp-javadoc-jms](http://www.itboth.com/d/3mMbua/socket-tcp-javadoc-jms)
 +  [Ehcache 下 用jgroup进行复制，Ehcache集群 https://blog.csdn.net/kindy1022/article/details/6681299](https://blog.csdn.net/kindy1022/article/details/6681299)

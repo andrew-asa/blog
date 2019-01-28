@@ -12,3 +12,10 @@
 + !n 执行第n个命名
 + !! 执行上一条命令
 + !command 执行上一条一command开头的命令
+
+
+### 命令专题
++ awk
+    + 截取第n个空格符隔开的信息 `awk '{print $n}'`
+      例如 "hello world, are you ok" 像获取`you`可以 awk '{print $4}'
+      

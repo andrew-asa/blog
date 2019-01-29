@@ -11,7 +11,10 @@
 + redis service和client不处于同一个ip？
 
 + 对于java客户端来就，redis就应该当成是一种基本数据结构就可以，然后再提供全局查找的功能
-+ 
++ redis-check-aof/redis-check-rdb 数据库恢复工具
++ redis-server 服务器程序
++ redis-cli 客户端程序
++ redis-benchmark 性能测试程序
 
 
 ### Q & A
@@ -21,6 +24,10 @@
 + redis 文件存放在哪里？
 + 怎么配置客户端连接配置密码?
 + 客户端连接是否有账户密码这一说法？
++ redis 单机于redis集群有什么关联以及区别？
++ 过个web 集群节点之间使用redis有什么需要注意的东西
++ 既然redis是一个内存key-value数据库，那么还需要使用者自己担心内存的问题，还是可以进行配置？
++ 说redis是内存操作似乎是不准确的，因为用redis-cli和服务器进行交互的时候关掉再重启还是可以获取之前保存的值？
 
 
 ### 参考资料

@@ -12,3 +12,4 @@
 ## 参考资料
 + [深入理解RPC之动态代理篇 https://www.cnkirito.moe/rpc-dynamic-proxy/](https://www.cnkirito.moe/rpc-dynamic-proxy/)
 + [RPC框架几行代码就够了 https://javatar.iteye.com/blog/1123915](https://javatar.iteye.com/blog/1123915)
++ [https://blog.csdn.net/loongshawn/article/details/73903709](https://blog.csdn.net/loongshawn/article/details/73903709)

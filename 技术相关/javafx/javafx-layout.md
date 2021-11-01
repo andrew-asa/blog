@@ -1,4 +1,4 @@
-### 知识点
+# 知识点
 + Parent
     + lookup(selector) 像前端那样提供选择器查找子类
     + requestLayout 请求父节点对其拥有的子节点进行布局

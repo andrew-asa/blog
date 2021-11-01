@@ -1,0 +1,2 @@
+# WebApplicationInitializer 类的初始化
+SpringServletContainerInitializer 中@HandlesTypes({WebApplicationInitializer.class}) 指定了WebApplicationInitializer接口进行传递给SpringServletContainerInitializer进行启动。

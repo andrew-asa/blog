@@ -18,6 +18,13 @@ Host *                        // 名称
     User example              // 某人用户名
 ```
 
+## 常用
++ 退出ssh `logout`
++ scp
+    + 从远程复制资源到本地路径`scp root@10.6.159.147:/opt/soft/demo.tar /opt/soft/`
+    + 上传本地文件到远程指定目录`scp /opt/soft/demo.tar root@10.6.159.147:/opt/soft/scptest`
+    + 上传本地目录到远程机器指定目录 `scp -r /opt/soft/test root@10.6.159.147:/opt/soft/scptest`
+
 
 
 ## 参考连接

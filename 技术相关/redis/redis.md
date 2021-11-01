@@ -7,6 +7,10 @@
    + ./redis-cli
       + set hello world
       + get hello 
+   
++ redis 连接远程客户端
+    + 连接`redis-cli -h {redis_host} -p {redis_port}`
+    + 停止，退出
 
 + redis service和client不处于同一个ip？
 

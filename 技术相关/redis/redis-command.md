@@ -87,6 +87,8 @@ hmset key hashkey hashvalue hashkey1 hashvalue1 ... | 为散列里面的一个�
 hmget key hashkey hashkey1 ... | 获取散列里面的一个或多个key值 | 
 hlen key | 获取散列里面键值对数量 | 
 hdel key hashkey1 hashkey2 ... | 删除一个或多个键值对 | 
+hgetall key | 返回 key 指定的哈希集中所有的字段和值。| 每个字段名的下一个是它的值，所以返回值的长度是哈希集大小的两倍
+hsetnx key field value | 只在 key 指定的哈希集中不存在指定的字段时，设置字段的值。如果 key 指定的哈希集不存在，会创建一个新的哈希集并与 key 关联。如果字段已存在，该操作无效果。 | 1：如果字段是个新的字段，并成功赋值 0：如果哈希集中已存在该字段，没有操作被执行
 
 ### 有序集合
 
@@ -114,6 +116,13 @@ exits key  | 测试key值是否存在 |
 type key  | key的类型 | 
 expire key  | 设置key值过期时间（s） | 
 ttl key  | 剩余多长时间过期（s） | -1表示已经过期
+FLUSHALL | 清空数据库
+eval | 执行某个脚本
+
+### 集群
+命令| 说明 | 返回值
+--- | ---| ---
+cluster nodes | 集群节点信息 | 
 
 ### 事务
 
@@ -139,3 +148,4 @@ shutdown save or nosave | 关闭服务端 |
 + 1:[redis 命令 http://www.redis.cn/commands.html#list](http://www.redis.cn/commands.html#list)
 + 2:[redis中的事务、lua脚本和管道的使用场景 https://blog.csdn.net/fangjian1204/article/details/50585080](https://blog.csdn.net/fangjian1204/article/details/50585080)
 + 3:[redis 脚本官方介绍 http://www.redis.cn/commands/eval.html](http://www.redis.cn/commands/eval.html)
++ 4:[Redis Lua 脚本调试器用法说明¶](http://blog.huangz.me/2017/redis-lua-debuger-introduction.html)

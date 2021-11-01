@@ -11,6 +11,8 @@
 + Charles 抓包工具
 + ftpserver ftp 服务器
 
+## 配置
++ dns配置 cat /etc/resolv.conf
 
 ## F&Q
 + 如何查看系统日记
